@@ -1,6 +1,6 @@
 pipeline{
 	agent {
-		docker {image 'maven:latest'}}
+		docker {image 'maven:3.9-sapmachine-17'}}
 	stages{
 		stage('Build') {
 			steps{
