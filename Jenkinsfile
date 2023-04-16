@@ -4,22 +4,22 @@ pipeline{
 	stages{
 		stage('Build') {
 			steps{
-				//sh 'mvn --version'
+				sh 'mvn --version'
 				echo "Build"
 			}
 		
 		}
-		stage('Test') {
-			steps{
-				echo "Test"
-			}
-		}
-		stage('Integration Test') {
-			steps{
-				echo "Integration Test"
-			}
+		// stage('Test') {
+		// 	steps{
+		// 		echo "Test"
+		// 	}
+		// }
+		// stage('Integration Test') {
+		// 	steps{
+		// 		echo "Integration Test"
+		// 	}
 			
-		}
+		// }
 	} 
 	post{
 		always{
